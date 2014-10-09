@@ -1,0 +1,9 @@
+---
+applications:
+- name: nodejs-mongo-sample
+  memory: 256M
+  instances: 1
+  path: .
+  host: nodejs-mongodb-drzoidberg
+  services:
+  - mongodb-sample

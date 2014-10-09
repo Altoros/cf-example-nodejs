@@ -6,7 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongoskin');
-var db = mongo.db("mongodb://localhost:27017/nodetest2", {native_parser:true});
+
+var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
+var db = mongo.db(vcap_services.mongolab[0].credentials.uri);
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
