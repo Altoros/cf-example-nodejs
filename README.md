@@ -39,7 +39,7 @@ Given that you have a 'manifest.yml' file, you don't need anything else.
 $ cf push
 ```
 
-You'll start receibing logs such as:
+You'll start receiving logs such as:
 ```
 12:39 PM $ cf push
 Using manifest file /Users/manu/cf/demo-apps/node/cf-example-nodejs/manifest.yml
